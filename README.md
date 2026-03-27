@@ -11,13 +11,22 @@ Team AI coding environment configuration. One command to set up everything.
 
 ## Quick Start
 
+**macOS / Linux — one command:**
+
 ```bash
-git clone git@github.com:nosclaw/dev-env.git
-cd dev-env
-bash setup.sh
+git clone https://github.com/nosclaw/dev-env.git && cd dev-env && bash setup.sh
 ```
 
-That's it. Takes ~2 minutes.
+Takes ~2 minutes. No Homebrew required on Linux.
+
+## Requirements
+
+| Requirement | macOS | Linux |
+|-------------|-------|-------|
+| git | ✅ | ✅ |
+| curl | ✅ | ✅ |
+| Node.js v18+ | ✅ | ✅ |
+| Homebrew | optional | not needed |
 
 ## What gets installed where
 
@@ -87,10 +96,3 @@ targets:
 ```
 
 Then run `skillshare sync`.
-
-## Requirements
-
-- macOS
-- [Homebrew](https://brew.sh)
-- Node.js (for GSD/pi)
-- Git with GitHub access
