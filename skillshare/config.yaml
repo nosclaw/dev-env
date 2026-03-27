@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/runkids/skillshare/main/schemas/config.schema.json
+# NOTE: 'source' and target 'path' values are rewritten by setup.sh with the actual $HOME path.
+source: __HOME__/.config/skillshare/skills
+extras_source: __HOME__/.config/skillshare/extras
+mode: merge
+targets:
+  claude:
+    path: __HOME__/.claude/skills
+    mode: symlink
+  pi:
+    path: __HOME__/.agents/skills
+    mode: symlink
+  universal:
+    path: __HOME__/.agents/skills
+    mode: symlink
+ignore:
+  - '**/.DS_Store'
+  - '**/.git/**'
+audit:
+  block_threshold: CRITICAL
