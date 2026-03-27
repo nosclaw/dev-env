@@ -100,13 +100,18 @@ else
 fi
 
 # =============================================================================
-# 4. Set up GSD standards
+# 4. Set up GSD standards + detect-stack script
 # =============================================================================
 section "Setting up GSD standards"
 
 mkdir -p "$HOME_DIR/.gsd/standards"
 cp -f "$REPO_DIR/gsd/standards/"* "$HOME_DIR/.gsd/standards/"
 log "Standards → ~/.gsd/standards/"
+
+# Install stack detection script
+cp -f "$REPO_DIR/scripts/detect-stack.sh" "$HOME_DIR/.gsd/detect-stack.sh"
+chmod +x "$HOME_DIR/.gsd/detect-stack.sh"
+log "Stack detector → ~/.gsd/detect-stack.sh"
 
 # =============================================================================
 # 5. Set up GSD preferences

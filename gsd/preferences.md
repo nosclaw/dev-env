@@ -32,6 +32,7 @@ git:
   pre_merge_check: auto
   auto_pr: true
   pr_target_branch: main
+  worktree_post_create: ~/.gsd/detect-stack.sh
 experimental:
   rtk: true
 custom_instructions:
