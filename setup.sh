@@ -173,6 +173,9 @@ skillshare install github.com/callstackincubator/agent-skills --all
 info "Vercel agent-skills (6 skills — React, RN, composition patterns, web design)..."
 skillshare install github.com/vercel-labs/agent-skills --all
 
+info "UI UX Pro Max"
+skillshare install github.com/nextlevelbuilder/ui-ux-pro-max-skill/.claude/skills --all
+
 log "All skills installed"
 
 # =============================================================================
